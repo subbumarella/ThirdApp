@@ -29,15 +29,10 @@ jobs:
           cd frontend/my-angular-app
           npm run build -- --configuration=production
 
-      - name: List build output
-        run: |
-          cd frontend/my-angular-app/dist
-          ls -R
-
       - name: Debug Build Output
         run: |
           echo "Checking build directory..."
-          ls -R frontend/my-angular-app/dist/my-angular-app    
+          ls -R frontend/my-angular-app/dist/my-angular-app || echo "Directory does not exist!"    
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
