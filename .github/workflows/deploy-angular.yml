@@ -34,6 +34,7 @@ jobs:
           cd frontend/my-angular-app/dist
           ls -R
 
+	#test
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
