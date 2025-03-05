@@ -37,7 +37,7 @@ jobs:
       - name: Debug Build Output
         run: |
           echo "Checking build directory..."
-          ls -R frontend/my-angular-app/dist/    
+          ls -R frontend/my-angular-app/dist/my-angular-app    
 
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
