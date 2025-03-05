@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowFrontend",
-        policy => policy.WithOrigins("http://localhost:4200") // Angular URL
+        policy => policy.WithOrigins("https://white-bay-0e548b510.6.azurestaticapps.net/") // Angular URL
                         .AllowAnyMethod()
                         .AllowAnyHeader());
 });
